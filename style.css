@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: none;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    gap: 3rem;
+}
+.time-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 0px;
+}
+.date-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px 0px 15px;
+    background: hsla(0, 0%, 75%, 0.628);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: 1.5rem;
+    width: 20rem;
+    gap: 2rem;
+}
+.boards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+
+}
+.board {
+    background: hsla(0, 0%, 71%, 0.537);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 12rem;
+    min-height: 20rem;
+}
+#links-list li{
+    list-style: none;
+    background: rgba(238, 238, 238, 0.658);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 1.8rem;
+    width: 10rem;
+    overflow: hidden;
+    padding: 0;
+}
+#links-list li a {
+    text-decoration: none;
+    color: black;
+}
+#links-list li img {
+    height: 1.5rem;
+    padding: 1px 3px 1px 1px;
+}
+#links-list li button {
+    display: flex;
+    justify-content: center;
+    border: none;
+    background: rgba(0, 153, 0, 0);
+    color: rgba(240, 248, 255, 0);
+    height: 2rem;
+    width: 1rem;
+    padding: 6px 0px 0px 0px;
+    margin: 0;
+}
+#links-list li button:hover {
+    background: rgb(255, 151, 151);
+    color: rgb(254, 254, 254);
+}
+#links-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.3rem;
+    padding: 0;
+    min-width: 7rem;
+}
+
+.new-image-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.my-button {
+    margin-top: auto;
+    padding: 5px 5px 5px 5px;
+}
+.my-button button {
+    background: rgba(166, 166, 166, 0.832);
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+.link-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+    width: 100%;
+}
+
+#board2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.location-name {
+    font-size: 0.6rem;
+}
+.weather-head {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.weather-head p {
+    padding: 0px 5px 10px 10px;
+    margin: 0;
+}
+.weather-head h3 {
+    padding: 0px 0px 0px 0px;
+}
+.weather-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(238, 238, 238, 0.658);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 80%;
+    height: 2rem;
+    padding: 5px 5px 5px 5px;
+}
+
+.weather-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    font-size: 0.5rem;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.weather-content i {
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+}
+
+.weather-text h3 {
+    font-size: 0.5rem;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.weather-info p {
+    background: rgb(255, 255, 255);
+    font-size: 0.45rem;
+    padding: 2px 5px 2px 5px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+#board3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.price-index {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(238, 238, 238, 0.658);
+    width: 90%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    gap: 0.0rem;
+}
+
+.price-index i {
+    padding: 2px 5px 2px 5px;
+    margin: 0px 15px 0px 5px;
+    color: rgb(83, 83, 255);
+    background: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.fa-brands.fa-bitcoin {
+    padding: 2px 2px 2px 2px;
+}
+
+.price-index-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px 5px 5px 5px;
+    gap: 1rem;
+}
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 1.5rem;
+    width: 100%;
+}
+.price p{
+    font-size: 0.7rem;
+}
+.change {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 0.5rem;
+    height: 0.5rem;
+}
+
+.change p {
+    background: rgb(255, 255, 255);
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.percent {
+    background: rgb(255, 255, 255);
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.negative {
+    color: rgb(206, 0, 0);
+}
+
+.positive {
+    color: rgb(0, 153, 0);
+}
+
+#notes {
+    height: 15rem;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.828);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

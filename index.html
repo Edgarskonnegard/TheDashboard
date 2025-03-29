@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="content" id="content-background">
+        <div class="time-container">
+            <div class="date-time" id="date-time"></div>
+        </div>
+        <div class="name">
+            <h1>John Doe Dashboard</h1>
+        </div>
+        <div class="boards-container">
+            <div class="board" id="board1">
+                <h3>Snabblänkar</h3>
+                <div id="links">
+                    <ul id="links-list">
+
+                    </ul>
+                </div>
+                <div class="my-button">
+                    <div id="link-form" class="hidden">
+                        <input type="text" id="link-title" placeholder="Name"/>
+                        <input type="url" id="link-url" placeholder="https://example.com"/>
+                        <button id="submit-new-link" onclick="linkFormClose()">save</button>
+                    </div>
+                    <button class="add-link" id="add-link-button" onclick="linkFormOpen()"><i class="fa-solid fa-plus"></i> add link</button>
+                </div>
+            </div>
+            <div class="board" id="board2">
+                <h3>Dagens väder</h3>
+            </div>
+            <div class="board" id="board3">
+                <h3>Valfri</h3>
+            </div>
+            <div class="board" id="board4">
+                <h3>Anteckningar</h3>
+                <textarea id="notes" placeholder="Skriv dina anteckningar här..."></textarea>
+            </div>
+        </div>
+        <div class="new-image-button-container">
+            <div class="my-button">
+                <button class="change-background" id="new-image-button"><i class="fa-solid fa-rotate-right"></i> randomize background</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
