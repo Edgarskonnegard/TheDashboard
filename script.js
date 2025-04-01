@@ -4,7 +4,8 @@ function updateDateTime() {
     const now = new Date();
 
     const time = now.toTimeString().split(' ')[0];
-    const date = now.toDateString().split('T')[0];
+    const date = now.toDateString().split(',');
+    console.log("date", date);
     dateTime.innerHTML=`
     <p><strong>${time.split(':')[0]}:${time.split(':')[1]}</strong></p>
     <p>${date}</p>
@@ -13,7 +14,7 @@ function updateDateTime() {
     
 }
 updateDateTime();
-setInterval(updateDateTime(), 100);
+setInterval(updateDateTime, 15000);
 
 let links = JSON.parse(localStorage.getItem('savedLinks')) || [];
 
@@ -268,6 +269,7 @@ async function getMarketValues() {
 getMarketValues();
 
 const textarea = document.getElementById('notes');
+const nameText = document.getElementById('name');
 
 window.onload = function() {
     getBackgroundImage();
@@ -275,10 +277,18 @@ window.onload = function() {
     if (savedNotes) {
         textarea.value = savedNotes;
     }
+    const savedName = localStorage.getItem('name');
+    if (savedName) {
+        nameText.value = savedName;
+    }
 };
 
 textarea.addEventListener('input', function() {
     localStorage.setItem('notes', this.value);
+});
+
+nameText.addEventListener('input', function() {
+    localStorage.setItem('name', this.value);
 });
 
 async function getBackgroundImage() {
